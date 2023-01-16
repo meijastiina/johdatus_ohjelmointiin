@@ -18,22 +18,24 @@ int main()
 {
     int integer1, integer2; // Integer variables 1 and 2 to store user input
     // Pyydä käyttäjältä kokonaisluku 1
-    printf("Hello World!\n");
+    printf("\nEnter number1: ");
     // Lue käyttäjän syöttämä kokonaisluku 1
     scanf("%d", &integer1);
     // Pyydä käyttäjältä kokonaisluku 2
-    printf("Hello World!\n");
+    printf("\nEnter number2: ");
     // Lue käyttäjän syöttämä kokonaisluku 2
     scanf("%d", &integer2);
     // Tulosta syötetyt luvut
-    printf("Hello World!\n");
+    printf("\nYou entered numbers %d and %d.", integer1, integer2);
     // Tulosta summa kokonaislukuna
-    printf("Hello World!\n");
+    printf("\nSum of numbers is %d.", integer1 + integer2);
     // Tulosta erotus kokonaislukuna
-    printf("Hello World!\n");
+    printf("\nDifference of numbers is %d", integer1 - integer2);
     // Tulosta tulo kokonaislukuna
-    printf("Hello World!\n");
+    printf("\nProduct of numbers is %d", integer1 * integer2);
     // Tulosta osamäärä desimaalilukuna
-    printf("Hello World!\n");
+    // Jos jakolasku suoritetaan kahdella kokonaisluvulla, myös osamäärä on kokonaisluku
+    // -> castataan jakaja ja jaettava liukuluvuiksi niin saadaan myös desimaaliosat osamäärään
+    printf("\nQuotient of numbers is %.2f\n\n", (float)integer1 / (float)integer2);
     return 0;
 }
